@@ -1,20 +1,14 @@
-/* Brand colours:
-
-Green: #0C7646
-Black: #000000
-Yellow: #EBBA27
-
-*/
-
 :root {
+  /* Constant used in some calcs */
+  --nav-height: 61px;
+
   --brand-black: #000000;
   --brand-white: #ffffff;
   --brand-green: #0c7646;
   --brand-yellow: #ebba27;
 
-  --font-size-base: 1rem;
-  --font-size-medium: 1.2rem;
-  --font-size-large: 1.5rem;
+  --font-size-base: 0.9rem;
+  --font-size-large: 1.3rem;
   --font-size-hero: 5rem;
 
   --content: var(--brand-black);
@@ -26,7 +20,7 @@ Yellow: #EBBA27
   --spacing-s: 6px;
   --spacing-m: 10px;
   --spacing-l: 18px;
-  --spacing-xl: 54px;
+  --spacing-xl: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -39,9 +33,19 @@ Yellow: #EBBA27
   }
 }
 
+@media screen and (min-width: 800px) {
+  :root {
+    --font-size-base: 1rem;
+    --font-size-large: 1.5rem;
+
+    --spacing-xl: 54px;
+  }
+}
+
 html {
   background-color: var(--bg);
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--nav-height) + var(--spacing-m));
   line-height: 1.6;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -50,13 +54,24 @@ body {
   margin: 0;
 }
 
-main {
-  width: 60%;
+main,
+.footer-content {
+  width: 90%;
   margin: 0 auto;
+
+  @media screen and (min-width: 800px) {
+    width: 60%;
+  }
 }
 
-figure {
+figure,
+ul {
   margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
 p {
@@ -113,7 +128,7 @@ nav {
 footer {
   background-color: var(--brand-black);
   margin-top: var(--spacing-xl);
-  padding: var(--spacing-m) var(--spacing-l);
+  padding: var(--spacing-m) 0;
   border-top: 1px solid var(--content);
 }
 
@@ -131,8 +146,7 @@ footer {
 
   position: absolute;
   right: var(--spacing-xl);
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: calc(var(--spacing-m) + var(--spacing-xl));
 
   > .hero-date-prefix {
     text-transform: capitalize;
@@ -175,12 +189,20 @@ footer {
   gap: var(--spacing-l);
 }
 
-.grid-cols-4 {
-  grid-column: span 4;
+.grid-cols-12 {
+  grid-column: span 12;
 }
 
-.grid-cols-8 {
-  grid-column: span 8;
+.md\:grid-cols-4 {
+  @media screen and (min-width: 800px) {
+    grid-column: span 4;
+  }
+}
+
+.md\:grid-cols-8 {
+  @media screen and (min-width: 800px) {
+    grid-column: span 8;
+  }
 }
 
 /* Placeholder */
