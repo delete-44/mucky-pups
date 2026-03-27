@@ -15,9 +15,9 @@
 </head>
 
 <body>
-  <nav>
-    <figure>
-      <img href="https://www.placekittens.com/48/48" />
+  <nav class="horizontal-align justify-space-between">
+    <figure class="horizontal-align">
+      <img href="https://www.placekittens.com/48/48" class='placeholder-img' height="48px" width="48px" />
 
       <figcaption>Mucky Pups</figcaption>
     </figure>
@@ -43,17 +43,31 @@
     <section>
       <h1 id="about">About</h1>
 
-      <div class="2-col">
-        <div>
-          <p>Who are we? What do we stand for? Where do we run?</p>
-
-          <p>Rough schedule</p>
-          <p>Who is welcome here</p>
+      <div class="display-grid">
+        <div class="grid-cols-8">
+          <p>Who are we? What do we stand for? Where do we run? Rough schedule. Who is welcome here?</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard
+            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type
+            specimen
+            book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages,
+            and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It has
+            survived not only five centuries, but also the leap into electronic typesetting, remaining
+            essentially
+            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+            passages,
+            and more
+            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
         </div>
 
-        <figure>
-
-          <!-- <img src="https://www.placekittens.com/2736/1935" /> -->
+        <figure class="grid-cols-4">
+          <img src="https://www.placekittens.com/2736/1935" height="250px" />
           <figcaption>The mucky pups admin team!</figcaption>
         </figure>
       </div>
@@ -62,15 +76,18 @@
     <section>
       <h2 id="contact">Contact</h2>
 
-      <div class="2-col">
-        <div>
-          <p>Contact us on telegram @___</p>
-          <p>Or email us at _____@______</p>
+      <div class="display-grid">
+        <div class="grid-cols-8">
+          <p>Email us at <a href="mailto:muckypupsbriz@gmail.com">muckypupsbriz@gmail.com</a></p>
+          <p>Or contact admins <a href="https://t.me/puzzlepup">@PuzzlePup</a> or <a
+              href="https://t.me/twitchycryptid">@twitchycryptid</a> on Telegram</p>
         </div>
 
-        <div>
-          <a><img href="https://www.placekittens.com/48/48" />Telegram</a>
-          <a><img href="https://www.placekittens.com/48/48" />Bsky</a>
+        <div class="grid-cols-4 horizontal-align">
+          <a href="https://t.me/muckyrules" class="social-link"><img href="https://www.placekittens.com/48/48"
+              class='placeholder-img' height="48px" width="48px" />Telegram</a>
+          <a href="https://muckypups.bsky.social" class="social-link"><img href="https://www.placekittens.com/48/48"
+              class='placeholder-img' height="48px" width="48px" />Bluesky</a>
         </div>
       </div>
     </section>
