@@ -31,10 +31,21 @@
     </section>
 
     <!-- Mobile navigation using native popover -->
-    <button class="display-block md:display-none" popovertarget="mobile-nav-menu">...</button>
+    <button class="display-block md:display-none" popovertarget="mobile-nav-menu" aria-label="Open Navigation">
+      <!-- Burger menu SVG - inlined so we can easily have hover/focus color change -->
+      <!-- src: https://lucide.dev/icons/menu -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-menu-icon lucide-menu">
+        <path d="M4 5h16" />
+        <path d="M4 12h16" />
+        <path d="M4 19h16" />
+      </svg>
+    </button>
+
     <section popover id="mobile-nav-menu">
       <ul>
-        <li><a>About</a></li>
+        <li><a href="#about">About</a></li>
         <li><a>Gallery</a></li>
         <li><a>Become a Member</a></li>
       </ul>
