@@ -1,5 +1,5 @@
-// Minimal + lightweight navigation component; no shadow DOM, no interactivity,
-// just lets us reuse the nav header.
+// Minimal component to let us reuse the nav header
+// No shadow DOM - we want global styles to apply to this
 class GlobalNavigation extends HTMLElement {
   static define(tag = "global-navigation") {
     customElements.define(tag, this);

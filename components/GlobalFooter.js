@@ -1,5 +1,5 @@
-// Minimal + lightweight footer component; no shadow DOM, no interactivity,
-// just lets us reuse the nav header.
+// Minimal component to let us reuse the footer
+// No shadow DOM - we want global styles to apply to this
 class GlobalFooter extends HTMLElement {
   static define(tag = "global-footer") {
     customElements.define(tag, this);
