@@ -18,6 +18,10 @@
   justify-content: space-between;
 }
 
+.gap-s {
+  gap: var(--spacing-s);
+}
+
 .gap-m {
   gap: var(--spacing-m);
 }
@@ -62,6 +66,10 @@
 
   .md\:display-none {
     display: none;
+  }
+
+  .md\:display-flex {
+    display: flex;
   }
 
   .md\:grid-cols-4 {

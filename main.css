@@ -91,6 +91,7 @@ p {
 
 p,
 small,
+span,
 li,
 figcaption {
   color: var(--content);
