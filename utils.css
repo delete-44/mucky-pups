@@ -10,8 +10,20 @@
   gap: var(--spacing-m);
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .justify-space-between {
   justify-content: space-between;
+}
+
+.gap-s {
+  gap: var(--spacing-s);
+}
+
+.gap-m {
+  gap: var(--spacing-m);
 }
 
 .display-block {
@@ -20,6 +32,14 @@
 
 .display-none {
   display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-inline-flex {
+  display: inline-flex;
 }
 
 .display-grid {
@@ -46,6 +66,10 @@
 
   .md\:display-none {
     display: none;
+  }
+
+  .md\:display-flex {
+    display: flex;
   }
 
   .md\:grid-cols-4 {
