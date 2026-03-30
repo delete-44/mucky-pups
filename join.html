@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Mucky Pups &middot; Join</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./utils.css">
+</head>
+
+<body>
+  <nav class="horizontal-align justify-space-between">
+    <figure class="horizontal-align">
+      <img href="https://www.placekittens.com/48/48" class='placeholder-img' height="48px" width="48px" />
+
+      <figcaption>Mucky Pups</figcaption>
+    </figure>
+
+    <!-- Desktop & large-screen nav menu -->
+    <section class="display-none md:display-block">
+      <a href="/#about">About</a>
+      <a>Gallery</a>
+      <a href="/join">Become a Member</a>
+    </section>
+
+    <!-- Mobile navigation using native popover -->
+    <button class="display-block md:display-none" popovertarget="mobile-nav-menu" aria-label="Open Navigation">
+      <!-- Burger menu SVG - inlined so we can easily have hover/focus color change -->
+      <!-- src: https://lucide.dev/icons/menu -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-menu-icon lucide-menu">
+        <path d="M4 5h16" />
+        <path d="M4 12h16" />
+        <path d="M4 19h16" />
+      </svg>
+    </button>
+
+    <section popover id="mobile-nav-menu">
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a>Gallery</a></li>
+        <li><a href="/join">Become a Member</a></li>
+      </ul>
+    </section>
+  </nav>
+
+  <main>
+    <section>
+      <h1>Become a Member</h1>
+
+      <div class="display-grid">
+        <div class="grid-cols-12 md:grid-cols-8">
+          <p>Mucky Pups is a <strong>members-only</strong> event. Membership is free, but events are ticketed.</p>
+          <p>Please ensure you have read our <a href="/#dress-code">Dress Code</a> &amp; <a
+              href="/#code-of-conduct">Code of Conduct</a> before joining.</p>
+          <a href="https://forms.gle/ZDoNDX7S9z6RHTNn6" class="cta-link">Membership form</a>
+        </div>
+
+        <figure class="grid-cols-12 md:grid-cols-4">
+          <img src="https://www.placekittens.com/2736/1935" height="250px" />
+          <figcaption>The mucky pups admin team!</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <ul>
+        <li><a href="/#about">About</a></li>
+        <li><a href="/#contact">Contact</a></li>
+        <li><a href="/#dress-code">Dress Code</a></li>
+        <li><a href="/#code-of-conduct">Code of Conduct</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
