@@ -1,6 +1,7 @@
 :root {
   /* Constant used in some calcs */
   --nav-height: 61px;
+  --md-breakpoint: 800px;
 
   --brand-black: #000000;
   --brand-white: #ffffff;
@@ -33,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: var(--md-breakpoint)) {
   :root {
     --font-size-base: 1rem;
     --font-size-large: 1.5rem;
@@ -59,7 +60,7 @@ main,
   width: 90%;
   margin: 0 auto;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: var(--md-breakpoint)) {
     width: 60%;
   }
 }
@@ -165,49 +166,4 @@ footer {
   display: flex;
   flex-direction: column;
   width: fit-content;
-}
-
-/* Utils */
-.relative {
-  position: relative;
-}
-
-.horizontal-align {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--spacing-m);
-}
-
-.justify-space-between {
-  justify-content: space-between;
-}
-
-/* Grid layouts */
-.display-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: var(--spacing-l);
-}
-
-.grid-cols-12 {
-  grid-column: span 12;
-}
-
-.md\:grid-cols-4 {
-  @media screen and (min-width: 800px) {
-    grid-column: span 4;
-  }
-}
-
-.md\:grid-cols-8 {
-  @media screen and (min-width: 800px) {
-    grid-column: span 8;
-  }
-}
-
-/* Placeholder */
-.placeholder-img {
-  background-color: var(--brand-white);
-  height: 48px;
-  width: 48px;
 }
