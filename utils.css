@@ -1,0 +1,58 @@
+/* Utils & microclasses akin to Tailwind */
+
+.relative {
+  position: relative;
+}
+
+.horizontal-align {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-l);
+}
+
+.grid-cols-12 {
+  grid-column: span 12;
+}
+
+/* Placeholder */
+.placeholder-img {
+  background-color: var(--brand-white);
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (min-width: 800px) {
+  .md\:display-block {
+    display: block;
+  }
+
+  .md\:display-none {
+    display: none;
+  }
+
+  .md\:grid-cols-4 {
+    grid-column: span 4;
+  }
+
+  .md\:grid-cols-8 {
+    grid-column: span 8;
+  }
+}
