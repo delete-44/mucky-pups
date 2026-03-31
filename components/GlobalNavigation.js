@@ -1,12 +1,23 @@
-// Minimal component to let us reuse the nav header
-// No shadow DOM - we want global styles to apply to this
+/**
+ * GlobalNavigation Web Component
+ *
+ *
+ * Loads global site header - componentised for reuse
+ *
+ * @class GlobalNavigation
+ * @extends HTMLElement
+ *
+ * @example
+ * <global-navigation></global-navigation>
+ *
+ * @description
+ * Renders a <nav> with the brand logo & navigation menus.
+ * Renders links in a line for desktop devices, and uses a native
+ * popover to render a mobile-friendly version
+ */
 class GlobalNavigation extends HTMLElement {
   static define(tag = "global-navigation") {
     customElements.define(tag, this);
-  }
-
-  constructor() {
-    super();
   }
 
   connectedCallback() {
@@ -22,7 +33,7 @@ class GlobalNavigation extends HTMLElement {
     this.innerHTML = `
       <nav class="display-inline-flex align-items-center gap-m justify-space-between">
         <figure class="display-inline-flex align-items-center gap-m">
-          <img href="https://www.placekittens.com/48/48" class='placeholder-img' height="48px" width="48px" />
+          <image-loader base-resource="/public/logo" width="48px" loading="eager"></image-loader>
 
           <figcaption>Mucky Pups</figcaption>
         </figure>
@@ -31,8 +42,7 @@ class GlobalNavigation extends HTMLElement {
         <section class="display-none md:display-flex align-items-center gap-s">
           <a href="/#about">About</a>
           <span>|</span>
-          <!-- TODO -->
-          <a>Gallery</a>
+          <a href="/gallery">Gallery</a>
           <span>|</span>
           <a href="/join">Become a Member</a>
         </section>
@@ -53,8 +63,7 @@ class GlobalNavigation extends HTMLElement {
         <section popover id="mobile-nav-menu">
           <ul>
             <li><a href="/#about">About</a></li>
-            <!-- TODO -->
-            <li><a>Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/join">Become a Member</a></li>
           </ul>
         </section>

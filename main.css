@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   :root {
     --font-size-m: 1rem;
     --font-size-l: 1.5rem;
@@ -64,7 +64,7 @@ main,
   width: 90%;
   margin: 0 auto;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     width: 60%;
   }
 }
@@ -188,11 +188,13 @@ footer {
   }
 }
 
-.hero-img {
-  width: 100%;
-  height: calc(100vh - var(--nav-height));
-  object-fit: cover;
-  border-bottom: 10px solid var(--brand-black);
+.hero-img-container {
+  img {
+    width: 100%;
+    height: calc(100svh - var(--nav-height));
+    object-fit: cover;
+    border-bottom: 10px solid var(--brand-black);
+  }
 }
 
 .hero-date-container {
