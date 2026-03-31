@@ -23,20 +23,16 @@
   --spacing-m: 10px;
   --spacing-l: 18px;
   --spacing-xl: 20px;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  @media (prefers-color-scheme: dark) {
     --content: var(--brand-white);
     --bg: var(--brand-black);
 
     --link: var(--brand-yellow);
     --link-highlight: var(--brand-yellow-highlight);
   }
-}
 
-@media screen and (min-width: 600px) {
-  :root {
+  @media screen and (min-width: 600px) {
     --font-size-m: 1rem;
     --font-size-l: 1.5rem;
 
@@ -74,7 +70,9 @@ main {
   flex: 1;
 }
 
+/* ---------------------------------------------------- */
 /* Native elements, baseline styling */
+/* ---------------------------------------------------- */
 
 figure,
 ul {
@@ -177,7 +175,9 @@ footer {
   border-top: 1px solid var(--content);
 }
 
+/* ---------------------------------------------------- */
 /* Targeted elements */
+/* ---------------------------------------------------- */
 
 #mobile-nav-menu {
   position-area: bottom;
@@ -215,4 +215,89 @@ footer {
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
+
+/* ---------------------------------------------------- */
+/* Utils & microclasses akin to Tailwind */
+/* ---------------------------------------------------- */
+
+.font-size-xl {
+  font-size: var(--font-size-xl);
+}
+
+.horizontal-align {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-m);
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.gap-s {
+  gap: var(--spacing-s);
+}
+
+.gap-m {
+  gap: var(--spacing-m);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.display-inline-flex {
+  display: inline-flex;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--spacing-l);
+}
+
+.grid-cols-12 {
+  grid-column: span 12;
+}
+
+/* Placeholder */
+.placeholder-img {
+  background-color: var(--brand-white);
+  height: 48px;
+  width: 48px;
+}
+
+@media screen and (min-width: 600px) {
+  .md\:display-block {
+    display: block;
+  }
+
+  .md\:display-none {
+    display: none;
+  }
+
+  .md\:display-flex {
+    display: flex;
+  }
+
+  .md\:grid-cols-4 {
+    grid-column: span 4;
+  }
+
+  .md\:grid-cols-8 {
+    grid-column: span 8;
+  }
 }
