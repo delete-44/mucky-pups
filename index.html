@@ -6,7 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.css">
   <link rel="icon" href="./public/favicon.ico">
 
   <!-- HTML Meta Tags -->
@@ -39,7 +38,25 @@
   <link rel="preload" as="image" href="public/hero.webp">
   <link rel="preload" as="image" href="public/hero-m.webp">
 
+  <link rel="preload" href="./main.css" as="style" />
+
+  <!-- Inline critical styles - set the background colour to prevent flashing when switching pages, -->
+  <!-- Leave a spacer of size `nav-height` to prevent UI jumping when nav bar loads -->
+  <!-- Layout the hero image, container, and date so that renders immediately -->
   <style>
+    html,
+    body {
+      background: var(--bg);
+      min-height: 100%;
+    }
+
+    global-navigation {
+      display: block;
+      height: var(--nav-height);
+      background: transparent;
+      box-sizing: border-box;
+    }
+
     .hero-img-container {
       width: 100%;
       height: calc(100svh - var(--nav-height));
@@ -82,6 +99,8 @@
       line-height: 1;
     }
   </style>
+
+  <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>

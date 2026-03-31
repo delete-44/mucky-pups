@@ -9,10 +9,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./main.css">
 
   <link rel="preload" as="image" href="public/logo.webp">
   <link rel="preload" as="image" href="public/logo-m.webp">
+  <link rel="preload" href="./main.css" as="style" />
 
   <link rel="icon" href="./public/favicon.ico">
 
@@ -39,6 +39,25 @@
   <meta name="twitter:image" content="https://mucky-pups.netlify.app/public/og-image.webp">
 
   <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+  <!-- Inline critical styles - set the background colour to prevent flashing when switching pages, -->
+  <!-- Leave a spacer of size `nav-height` to prevent UI jumping when nav bar loads -->
+  <style>
+    html,
+    body {
+      background: var(--bg);
+      min-height: 100%;
+    }
+
+    global-navigation {
+      display: block;
+      height: var(--nav-height);
+      background: transparent;
+      box-sizing: border-box;
+    }
+  </style>
+
+  <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
