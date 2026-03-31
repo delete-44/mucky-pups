@@ -215,8 +215,13 @@ footer {
   img {
     width: 100%;
     height: calc(100svh - var(--nav-height));
+    aspect-ratio: 1 / 3;
     object-fit: cover;
     border-bottom: 10px solid var(--brand-black);
+
+    @media screen and (min-width: 600px) {
+      aspect-ratio: 4 / 3;
+    }
   }
 }
 
