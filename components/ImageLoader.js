@@ -17,7 +17,8 @@ class ImageLoader extends HTMLElement {
     const baseResource =
         this.getAttribute("base-resource") ?? "/public/placeholder",
       alt = this.getAttribute("alt") ?? "Placeholder image",
-      width = this.getAttribute("width") ?? "100%";
+      width = this.getAttribute("width") ?? "100%",
+      loading = this.getAttribute("loading") ?? "lazy";
 
     this.innerHTML = `
       <picture>
@@ -26,7 +27,7 @@ class ImageLoader extends HTMLElement {
         <!-- Desktop Image -->
         <source media="(min-width: 601px)" srcset="${baseResource}.webp">
         <!-- Fallback Image -->
-        <img aria-hidden="true" loading="lazy" decoding="async"
+        <img aria-hidden="true" loading="${loading}" decoding="async"
           src="/public/placeholder.webp"
           alt="${alt}" width="${width}">
       </picture>
