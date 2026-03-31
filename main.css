@@ -212,6 +212,9 @@ footer {
 }
 
 .hero-img-container {
+  width: 100%;
+  height: calc(100svh - var(--nav-height));
+
   img {
     width: 100%;
     height: calc(100svh - var(--nav-height));
