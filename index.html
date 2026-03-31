@@ -13,13 +13,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./main.css">
   <link rel="stylesheet" href="./utils.css">
+
+  <link rel="preload" as="image" href="public/logo.webp">
+  <link rel="preload" as="image" href="public/logo-m.webp">
+
+  <link rel="preload" as="image" href="public/hero.webp">
+  <link rel="preload" as="image" href="public/hero-m.webp">
 </head>
 
 <body>
   <global-navigation></global-navigation>
 
-  <div class="relative">
-    <img class="hero-img" src="https://www.placekittens.com/3446/1935" />
+  <div class="hero-img-container relative">
+    <image-loader base-resource="/public/hero"></image-loader>
 
     <section class="hero-date-container">
       <small class="hero-date-prefix">Next event:</small>
@@ -113,6 +119,7 @@
 
   <script src="./components/GlobalNavigation.js" async defer></script>
   <script src="./components/GlobalFooter.js" async defer></script>
+  <script src="./components/ImageLoader.js" async defer></script>
 </body>
 
 </html>

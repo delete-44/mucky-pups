@@ -18,7 +18,7 @@ class GlobalNavigation extends HTMLElement {
     this.innerHTML = `
       <nav class="display-inline-flex align-items-center gap-m justify-space-between">
         <figure class="display-inline-flex align-items-center gap-m">
-          <img href="https://www.placekittens.com/48/48" class='placeholder-img' height="48px" width="48px" />
+          <image-loader base-resource="/public/logo" width="48px"></image-loader>
 
           <figcaption>Mucky Pups</figcaption>
         </figure>

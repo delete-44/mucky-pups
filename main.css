@@ -188,11 +188,13 @@ footer {
   }
 }
 
-.hero-img {
-  width: 100%;
-  height: calc(100vh - var(--nav-height));
-  object-fit: cover;
-  border-bottom: 10px solid var(--brand-black);
+.hero-img-container {
+  img {
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+    object-fit: cover;
+    border-bottom: 10px solid var(--brand-black);
+  }
 }
 
 .hero-date-container {
