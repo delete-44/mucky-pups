@@ -22,6 +22,8 @@
  * @attribute {string} [loading="lazy"] - Loading strategy for the image. Accepts "lazy"
  *   or "eager". Use "eager" for above-the-fold images like heroes.
  *
+ * @attribute {string} [fetchpriority="auto"] - Configure fetch prioirty - complements preloading
+ *
  *
  * @description
  * Renders a `<picture>` element with:
@@ -43,7 +45,8 @@ class ImageLoader extends HTMLElement {
         this.getAttribute("base-resource") ?? "/public/placeholder",
       alt = this.getAttribute("alt") ?? "Placeholder image",
       width = this.getAttribute("width") ?? "100%",
-      loading = this.getAttribute("loading") ?? "lazy";
+      loading = this.getAttribute("loading") ?? "lazy",
+      fetchpriority = this.getAttribute("fetchpriority") ?? "auto";
 
     this.innerHTML = `
       <picture>
@@ -54,7 +57,7 @@ class ImageLoader extends HTMLElement {
         <!-- Fallback Image -->
         <img aria-hidden="true" loading="${loading}" decoding="async"
           src="/public/placeholder.webp"
-          alt="${alt}" width="${width}">
+          alt="${alt}" width="${width}" fetchpriority="${fetchpriority}">
       </picture>
     `;
   }
