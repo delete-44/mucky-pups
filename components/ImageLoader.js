@@ -19,6 +19,8 @@
  *
  * @attribute {string} [width="100%"] - CSS width value for the image.
  *
+ * @attribute {string} [height="auto"] - CSS height value for the image.
+ *
  * @attribute {string} [loading="lazy"] - Loading strategy for the image. Accepts "lazy"
  *   or "eager". Use "eager" for above-the-fold images like heroes.
  *
@@ -45,6 +47,7 @@ class ImageLoader extends HTMLElement {
         this.getAttribute("base-resource") ?? "/public/placeholder",
       alt = this.getAttribute("alt") ?? "Placeholder image",
       width = this.getAttribute("width") ?? "100%",
+      height = this.getAttribute("height") ?? "auto",
       loading = this.getAttribute("loading") ?? "lazy",
       fetchpriority = this.getAttribute("fetchpriority") ?? "auto";
 
@@ -57,7 +60,7 @@ class ImageLoader extends HTMLElement {
         <!-- Fallback Image -->
         <img aria-hidden="true" loading="${loading}" decoding="async"
           src="/public/placeholder.webp"
-          alt="${alt}" width="${width}" fetchpriority="${fetchpriority}">
+          alt="${alt}" width="${width}" height="${height}" fetchpriority="${fetchpriority}">
       </picture>
     `;
   }

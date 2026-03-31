@@ -33,7 +33,7 @@ class GlobalNavigation extends HTMLElement {
     this.innerHTML = `
       <nav class="display-inline-flex align-items-center gap-m justify-space-between">
         <figure class="display-inline-flex align-items-center gap-m">
-          <image-loader base-resource="/public/logo" width="48px" loading="eager" alt="" fetchpriority="high"></image-loader>
+          <image-loader base-resource="/public/logo" width="48px" height="48px" loading="eager" alt="" fetchpriority="high"></image-loader>
 
           <figcaption>Mucky Pups</figcaption>
         </figure>
