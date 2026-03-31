@@ -4,10 +4,6 @@
   font-size: var(--font-size-xl);
 }
 
-.relative {
-  position: relative;
-}
-
 .horizontal-align {
   display: inline-flex;
   align-items: center;

@@ -19,12 +19,56 @@
 
   <link rel="preload" as="image" href="public/hero.webp">
   <link rel="preload" as="image" href="public/hero-m.webp">
+
+  <style>
+    .hero-img-container {
+      width: 100%;
+      height: calc(100svh - var(--nav-height));
+      position: relative;
+    }
+
+    .hero-img-container img {
+      width: 100%;
+      height: calc(100svh - var(--nav-height));
+      aspect-ratio: 1 / 3;
+      object-fit: cover;
+      object-position: center center;
+      border-bottom: 10px solid var(--brand-black);
+    }
+
+    @media screen and (min-width: 600px) {
+      .hero-img-container img {
+        aspect-ratio: 4 / 3;
+      }
+    }
+
+    .hero-date-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: var(--spacing-m);
+      border-radius: 5px;
+      position: absolute;
+      right: var(--spacing-xl);
+      bottom: calc(var(--spacing-m) + var(--spacing-xl));
+    }
+
+    .hero-date-container>.hero-date-prefix {
+      text-transform: capitalize;
+      color: var(--brand-white);
+    }
+
+    .hero-date-container>.hero-date {
+      color: var(--brand-white);
+      font-size: var(--font-size-hero);
+      margin: 0;
+      line-height: 1;
+    }
+  </style>
 </head>
 
 <body>
   <global-navigation></global-navigation>
 
-  <div class="hero-img-container relative">
+  <div class="hero-img-container">
     <section class="hero-date-container">
       <small class="hero-date-prefix">Next event:</small>
       <p class="hero-date">03/04</p>
@@ -34,11 +78,10 @@
     <picture>
       <source media="(max-width: 600px)" srcset="/public/hero-m.webp">
       <source media="(min-width: 601px)" srcset="/public/hero.webp">
-      <img aria-hidden="true" loading="eager" decoding="async" src="/public/placeholder.webp" alt="" width="100%"
-        height="100%" fetchpriority="high">
+      <img aria-hidden="true" loading="eager" decoding="async" src="/public/placeholder.webp" alt="" width="2061px"
+        height="1452px" fetchpriority="high">
     </picture>
   </div>
-
 
   <main>
     <section>

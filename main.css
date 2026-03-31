@@ -211,46 +211,6 @@ footer {
   }
 }
 
-.hero-img-container {
-  width: 100%;
-  height: calc(100svh - var(--nav-height));
-
-  img {
-    width: 100%;
-    height: calc(100svh - var(--nav-height));
-    aspect-ratio: 1 / 3;
-    object-fit: cover;
-    border-bottom: 10px solid var(--brand-black);
-
-    @media screen and (min-width: 600px) {
-      aspect-ratio: 4 / 3;
-    }
-  }
-}
-
-.hero-date-container {
-  background-color: rgb(0, 0, 0, 0.6);
-
-  padding: var(--spacing-m);
-  border-radius: 5px;
-
-  position: absolute;
-  right: var(--spacing-xl);
-  bottom: calc(var(--spacing-m) + var(--spacing-xl));
-
-  > .hero-date-prefix {
-    text-transform: capitalize;
-    color: var(--brand-white);
-  }
-
-  > .hero-date {
-    color: var(--brand-white);
-    font-size: var(--font-size-hero);
-    margin: 0;
-    line-height: 1;
-  }
-}
-
 .social-link {
   display: flex;
   flex-direction: column;
