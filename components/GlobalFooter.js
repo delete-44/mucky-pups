@@ -20,8 +20,7 @@ class GlobalFooter extends HTMLElement {
             <li><a href="/#code-of-conduct">Code of Conduct</a></li>
           </ul>
           <ul>
-            <!-- TODO -->
-            <li><a>Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/join">Become a Member</a></li>
           </ul>
         </div>

@@ -27,8 +27,7 @@ class GlobalNavigation extends HTMLElement {
         <section class="display-none md:display-flex align-items-center gap-s">
           <a href="/#about">About</a>
           <span>|</span>
-          <!-- TODO -->
-          <a>Gallery</a>
+          <a href="/gallery">Gallery</a>
           <span>|</span>
           <a href="/join">Become a Member</a>
         </section>
@@ -49,8 +48,7 @@ class GlobalNavigation extends HTMLElement {
         <section popover id="mobile-nav-menu">
           <ul>
             <li><a href="/#about">About</a></li>
-            <!-- TODO -->
-            <li><a>Gallery</a></li>
+            <li><a href="/gallery">Gallery</a></li>
             <li><a href="/join">Become a Member</a></li>
           </ul>
         </section>
