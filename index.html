@@ -25,12 +25,18 @@
   <global-navigation></global-navigation>
 
   <div class="hero-img-container relative">
-    <image-loader base-resource="/public/hero" loading="eager" fetchpriority="high"></image-loader>
-
     <section class="hero-date-container">
       <small class="hero-date-prefix">Next event:</small>
       <p class="hero-date">03/04</p>
     </section>
+
+    <!-- Inline hero image so it is discoverable from the HTML -->
+    <picture>
+      <source media="(max-width: 600px)" srcset="/public/hero-m.webp">
+      <source media="(min-width: 601px)" srcset="/public/hero.webp">
+      <img aria-hidden="true" loading="eager" decoding="async" src="/public/placeholder.webp" alt=""
+        style="width: 100%; min-height: 90vh; aspect-ratio: 4/3;" fetchpriority="high">
+    </picture>
   </div>
 
 
