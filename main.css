@@ -8,8 +8,8 @@
   --brand-yellow: #ebba27;
   --brand-yellow-highlight: #cea11c;
 
-  --font-size-m: 0.9rem;
-  --font-size-l: 1.3rem;
+  --font-size-m: 1.2rem;
+  --font-size-l: 1.5rem;
   --font-size-xl: 2rem;
   --font-size-hero: 5rem;
 
@@ -22,7 +22,7 @@
   --spacing-s: 6px;
   --spacing-m: 10px;
   --spacing-l: 18px;
-  --spacing-xl: 20px;
+  --spacing-xl: 35px;
 
   @media (prefers-color-scheme: dark) {
     --content: var(--brand-white);
@@ -32,11 +32,8 @@
     --link-highlight: var(--brand-yellow-highlight);
   }
 
-  @media screen and (min-width: 600px) {
-    --font-size-m: 1rem;
-    --font-size-l: 1.5rem;
-
-    --spacing-xl: 54px;
+  @media screen and (min-width: 750px) {
+    --spacing-xl: 64px;
   }
 }
 
@@ -61,7 +58,7 @@ main,
   width: 90%;
   margin: 0 auto;
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 750px) {
     width: 60%;
   }
 }
@@ -182,6 +179,7 @@ footer {
 #mobile-nav-menu {
   position-area: bottom;
   margin: var(--spacing-s) var(--spacing-m);
+  padding: var(--spacing-s) var(--spacing-m);
   border: 1px solid var(--brand-white);
 
   &::backdrop {
@@ -280,7 +278,7 @@ footer {
   width: 48px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
   .md\:display-block {
     display: block;
   }

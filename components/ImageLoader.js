@@ -29,7 +29,7 @@
  *
  * @description
  * Renders a `<picture>` element with:
- * - Mobile variant (max-width: 600px): `{base-resource}-m.webp`
+ * - Mobile variant (max-width: 750px): `{base-resource}-m.webp`
  * - Desktop variant (min-width: 601px): `{base-resource}.webp`
  * - Fallback: `/public/placeholder.webp`
  */
@@ -54,7 +54,7 @@ class ImageLoader extends HTMLElement {
     this.innerHTML = `
       <picture>
         <!-- Mobile Image -->
-        <source media="(max-width: 600px)" srcset="${baseResource}-m.webp">
+        <source media="(max-width: 750px)" srcset="${baseResource}-m.webp">
         <!-- Desktop Image -->
         <source media="(min-width: 601px)" srcset="${baseResource}.webp">
         <!-- Fallback Image -->
