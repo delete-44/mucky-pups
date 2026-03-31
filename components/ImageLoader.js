@@ -1,9 +1,34 @@
-// Accepts a string attr "baseResource" - this is the relative location of the image in the codebase
-// If given baseResource=public/dec-2025/disco
-// Will load the resources:
-// - public/dec-2025/disco.webp (for desktop)
-// - public/dec-2025/disco-m.webp (for mobile)
-// - public/placeholder.webp (as a fallback img)
+/**
+ * ImageLoader Web Component
+ *
+ *
+ * Loads responsive images with mobile and desktop variants.
+ *
+ * @class ImageLoader
+ * @extends HTMLElement
+ *
+ * @example
+ * // Basic usage
+ * <image-loader base-resource="/public/hero"></image-loader>
+ *
+ * @attribute {string} base-resource - The relative path to the image without extension.
+ *   The component will load `{base-resource}.webp` for desktop and `{base-resource}-m.webp`
+ *   for mobile. Defaults to `/public/placeholder`.
+ *
+ * @attribute {string} [alt="Placeholder image"] - Alt text for the image.
+ *
+ * @attribute {string} [width="100%"] - CSS width value for the image.
+ *
+ * @attribute {string} [loading="lazy"] - Loading strategy for the image. Accepts "lazy"
+ *   or "eager". Use "eager" for above-the-fold images like heroes.
+ *
+ *
+ * @description
+ * Renders a `<picture>` element with:
+ * - Mobile variant (max-width: 600px): `{base-resource}-m.webp`
+ * - Desktop variant (min-width: 601px): `{base-resource}.webp`
+ * - Fallback: `/public/placeholder.webp`
+ */
 class ImageLoader extends HTMLElement {
   static define(tag = "image-loader") {
     customElements.define(tag, this);

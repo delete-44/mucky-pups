@@ -1,5 +1,20 @@
-// Minimal component to let us reuse the nav header
-// No shadow DOM - we want global styles to apply to this
+/**
+ * GlobalNavigation Web Component
+ *
+ *
+ * Loads global site header - componentised for reuse
+ *
+ * @class GlobalNavigation
+ * @extends HTMLElement
+ *
+ * @example
+ * <global-navigation></global-navigation>
+ *
+ * @description
+ * Renders a <nav> with the brand logo & navigation menus.
+ * Renders links in a line for desktop devices, and uses a native
+ * popover to render a mobile-friendly version
+ */
 class GlobalNavigation extends HTMLElement {
   static define(tag = "global-navigation") {
     customElements.define(tag, this);
