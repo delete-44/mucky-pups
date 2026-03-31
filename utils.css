@@ -59,7 +59,7 @@
   width: 48px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   .md\:display-block {
     display: block;
   }

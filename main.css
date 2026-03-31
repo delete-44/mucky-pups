@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
   :root {
     --font-size-m: 1rem;
     --font-size-l: 1.5rem;
@@ -64,7 +64,7 @@ main,
   width: 90%;
   margin: 0 auto;
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     width: 60%;
   }
 }
