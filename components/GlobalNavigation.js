@@ -5,10 +5,6 @@ class GlobalNavigation extends HTMLElement {
     customElements.define(tag, this);
   }
 
-  constructor() {
-    super();
-  }
-
   connectedCallback() {
     this.style.display = "block";
     this.style.position = "sticky";

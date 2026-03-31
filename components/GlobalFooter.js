@@ -5,10 +5,6 @@ class GlobalFooter extends HTMLElement {
     customElements.define(tag, this);
   }
 
-  constructor() {
-    super();
-  }
-
   connectedCallback() {
     this.render();
   }

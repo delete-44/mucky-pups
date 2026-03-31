@@ -30,108 +30,22 @@
       <section class="display-grid gap-m">
 
         <div class="grid-cols-12 md:grid-cols-4">
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/disco-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/disco.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Disco ball" width="100%">
-          </picture>
-
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/green-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/green.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Green" width="100%">
-          </picture>
-
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/black-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/black.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Black" width="100%">
-          </picture>
+          <image-loader base-resource="/public/dec-2025/disco"></image-loader>
+          <image-loader base-resource="/public/dec-2025/green"></image-loader>
+          <image-loader base-resource="/public/dec-2025/black"></image-loader>
         </div>
 
         <div class="grid-cols-12 md:grid-cols-4">
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/black-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/black.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Black" width="100%">
-          </picture>
-
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/disco-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/disco.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Disco ball" width="100%">
-          </picture>
-
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/green-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/green.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Green" width="100%">
-          </picture>
+          <image-loader base-resource="/public/dec-2025/black"></image-loader>
+          <image-loader base-resource="/public/dec-2025/disco"></image-loader>
+          <image-loader base-resource="/public/dec-2025/green"></image-loader>
         </div>
 
         <div class="grid-cols-12 md:grid-cols-4">
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/green-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/green.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Green" width="100%">
-          </picture>
+          <image-loader base-resource="/public/dec-2025/green"></image-loader>
+          <image-loader base-resource="/public/dec-2025/black"></image-loader>
+          <image-loader base-resource="/public/dec-2025/disco"></image-loader>
 
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/disco-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/disco.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Disco ball" width="100%">
-          </picture>
-
-          <picture>
-            <!-- Mobile Image -->
-            <source media="(max-width: 600px)" srcset="/public/dec-2025/black-m.webp">
-            <!-- Desktop Image -->
-            <source media="(min-width: 601px)" srcset="/public/dec-2025/black.webp">
-            <!-- Fallback Image -->
-            <img aria-hidden="true" loading="lazy" decoding="async"
-              src="https://www.cssscript.com/wp-content/uploads/2022/08/CSS-Only-Image-Loader-With-Fallback.webp"
-              alt="Black" width="100%">
-          </picture>
         </div>
       </section>
 
@@ -143,6 +57,7 @@
 
   <script src="./components/GlobalFooter.js" async defer></script>
   <script src="./components/GlobalNavigation.js" async defer></script>
+  <script src="./components/ImageLoader.js" async defer></script>
 </body>
 
 </html>
