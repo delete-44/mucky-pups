@@ -72,13 +72,23 @@ main {
 /* ---------------------------------------------------- */
 
 figure,
-ul {
+ul,
+ol {
   margin: 0;
 }
 
 ul {
-  list-style: none;
   padding: 0;
+  list-style: none;
+}
+
+ol {
+  padding: 0;
+  list-style-position: inside;
+
+  h3 {
+    display: inline;
+  }
 }
 
 li {
@@ -93,8 +103,18 @@ p,
 small,
 span,
 li,
-figcaption {
+figcaption,
+h1,
+h2,
+h3 {
   color: var(--content);
+}
+
+p,
+small,
+span,
+li,
+figcaption {
   font-size: var(--font-size-m);
 }
 
@@ -110,10 +130,14 @@ a {
 
 h1,
 h2 {
-  color: var(--content);
   font-size: var(--font-size-l);
 
   margin-top: var(--spacing-l);
+  margin-bottom: 0;
+}
+
+h3 {
+  margin-top: var(--spacing-m);
   margin-bottom: 0;
 }
 
