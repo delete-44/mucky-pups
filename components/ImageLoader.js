@@ -9,11 +9,11 @@
  *
  * @example
  * // Basic usage
- * <image-loader base-resource="/public/hero"></image-loader>
+ * <image-loader base-resource="/assets/hero"></image-loader>
  *
  * @attribute {string} base-resource - The relative path to the image without extension.
  *   The component will load `{base-resource}.webp` for desktop and `{base-resource}-m.webp`
- *   for mobile. Defaults to `/public/placeholder`.
+ *   for mobile. Defaults to `/assets/placeholder`.
  *
  * @attribute {string} [alt="Placeholder image"] - Alt text for the image.
  *
@@ -31,7 +31,7 @@
  * Renders a `<picture>` element with:
  * - Mobile variant (max-width: 750px): `{base-resource}-m.webp`
  * - Desktop variant (min-width: 601px): `{base-resource}.webp`
- * - Fallback: `/public/placeholder.webp`
+ * - Fallback: `/assets/placeholder.webp`
  */
 class ImageLoader extends HTMLElement {
   static define(tag = "image-loader") {
@@ -44,7 +44,7 @@ class ImageLoader extends HTMLElement {
 
   render() {
     const baseResource =
-        this.getAttribute("base-resource") ?? "/public/placeholder",
+        this.getAttribute("base-resource") ?? "/assets/placeholder",
       alt = this.getAttribute("alt") ?? "Placeholder image",
       width = this.getAttribute("width") ?? "100%",
       height = this.getAttribute("height") ?? "auto",
@@ -59,7 +59,7 @@ class ImageLoader extends HTMLElement {
         <source media="(min-width: 601px)" srcset="${baseResource}.webp">
         <!-- Fallback Image -->
         <img aria-hidden="true" loading="${loading}" decoding="async"
-          src="/public/placeholder.webp"
+          src="/assets/placeholder.webp"
           alt="${alt}" width="${width}" height="${height}" fetchpriority="${fetchpriority}">
       </picture>
     `;
