@@ -30,9 +30,9 @@ class GlobalFooter extends HTMLElement {
             <li><a href="/#about">About</a></li>
             <li><a href="/#contact">Contact</a></li>
             <li><a href="/#dress-code">Dress Code</a></li>
-            <li><a href="/#code-of-conduct">Code of Conduct</a></li>
           </ul>
           <ul>
+            <li><a href="/conduct">Code of Conduct</a></li>
             <li><a href="/gallery">Gallery</a></li>
             <li><a href="/join">Become a Member</a></li>
           </ul>

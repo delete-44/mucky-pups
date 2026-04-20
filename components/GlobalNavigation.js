@@ -42,6 +42,8 @@ class GlobalNavigation extends HTMLElement {
         <section class="display-none md:display-flex align-items-center gap-s">
           <a href="/#about">About</a>
           <span>|</span>
+          <a href="/conduct">Code of Conduct</a>
+          <span>|</span>
           <a href="/gallery">Gallery</a>
           <span>|</span>
           <a href="/join">Become a Member</a>
@@ -63,6 +65,7 @@ class GlobalNavigation extends HTMLElement {
         <section popover id="mobile-nav-menu">
           <ul>
             <li><a href="/#about">About</a></li>
+            <li><a href="/conduct">Code of Conduct</a></li>
             <li><a href="/gallery">Gallery</a></li>
             <li><a href="/join">Become a Member</a></li>
           </ul>
