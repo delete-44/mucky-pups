@@ -288,7 +288,7 @@ footer {
 .display-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: var(--spacing-l);
+  gap: var(--spacing-m);
 }
 
 .grid-cols-12 {
