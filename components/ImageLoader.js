@@ -24,7 +24,7 @@
  * @attribute {string} [loading="lazy"] - Loading strategy for the image. Accepts "lazy"
  *   or "eager". Use "eager" for above-the-fold images like heroes.
  *
- * @attribute {string} [fetchpriority="auto"] - Configure fetch prioirty - complements preloading
+ * @attribute {string} [fetchpriority="auto"] - Configure fetch priority - complements preloading
  *
  *
  * @description
