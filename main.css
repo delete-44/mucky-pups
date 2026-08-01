@@ -8,6 +8,7 @@
   --brand-yellow: #ebba27;
   --brand-yellow-highlight: #cea11c;
 
+  --font-size-s: 1rem;
   --font-size-m: 1.2rem;
   --font-size-l: 1.5rem;
   --font-size-xl: 2rem;
@@ -111,11 +112,14 @@ h3 {
 }
 
 p,
-small,
 span,
 li,
 figcaption {
   font-size: var(--font-size-m);
+}
+
+small {
+  font-size: var(--font-size-s);
 }
 
 a {
