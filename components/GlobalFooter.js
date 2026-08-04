@@ -25,17 +25,21 @@ class GlobalFooter extends HTMLElement {
   render() {
     this.innerHTML = `
       <footer>
-        <div class="footer-content display-flex gap-m">
-          <ul>
-            <li><a href="/#about">About</a></li>
-            <li><a href="/#contact">Contact</a></li>
-            <li><a href="/#dress-code">Dress Code</a></li>
-          </ul>
-          <ul>
-            <li><a href="/conduct">Code of Conduct</a></li>
-            <li><a href="/gallery">Gallery</a></li>
-            <li><a href="/join">Become a Member</a></li>
-          </ul>
+        <div class="footer-content">
+          <section class="display-flex gap-m">
+            <ul>
+              <li><a href="/#about">About</a></li>
+              <li><a href="/#contact">Contact</a></li>
+              <li><a href="/#dress-code">Dress Code</a></li>
+            </ul>
+            <ul>
+              <li><a href="/conduct">Code of Conduct</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/join">Become a Member</a></li>
+            </ul>
+          </section>
+
+          <small>website made by delete <3</small>
         </div>
       </footer>
     `;

@@ -76,6 +76,14 @@ figure,
 ul,
 ol {
   margin: 0;
+
+  li {
+    padding-bottom: var(--spacing-s);
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+  }
 }
 
 ul {
@@ -90,10 +98,6 @@ ol {
   h3 {
     display: inline;
   }
-}
-
-li {
-  padding: var(--spacing-s) 0;
 }
 
 p {
@@ -195,8 +199,8 @@ button {
 }
 
 footer {
-  margin-top: var(--spacing-xl);
-  padding: var(--spacing-m) 0;
+  margin-top: var(--spacing-l);
+  padding: var(--spacing-l) 0;
   border-top: 1px solid var(--content);
 }
 
@@ -241,6 +245,17 @@ footer {
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--spacing-l);
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+  }
 }
 
 /* ---------------------------------------------------- */
