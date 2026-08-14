@@ -310,6 +310,10 @@ footer {
   gap: var(--spacing-m);
 }
 
+.grid-cols-6 {
+  grid-column: span 6;
+}
+
 .grid-cols-12 {
   grid-column: span 12;
 }
