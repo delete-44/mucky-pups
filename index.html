@@ -150,9 +150,20 @@
           <p>Interested? <a href="/join">Join us!</a></p>
         </div>
 
+
         <figure class="grid-cols-12 md:grid-cols-4">
-          <image-loader width="250px"></image-loader>
-          <figcaption>The mucky pups admin team!</figcaption>
+          <!-- Admins get a subgrid that renders the same on small & large screens -->
+          <div class="display-grid">
+            <div class="grid-cols-6">
+              <image-loader base-resource="/assets/admins/puzzle"
+                alt="Puzzle, the leather-clad african wild dog pup, posing in front of a colourful, cheery background."></image-loader>
+            </div>
+            <div class="grid-cols-6">
+              <image-loader base-resource="/assets/admins/rotten"
+                alt="Rotten, the skulldog dad of the team claws at the camera in front of his shelves of curios."></image-loader>
+            </div>
+          </div>
+          <figcaption>(some of) the Mucky Pups staff!</figcaption>
         </figure>
       </div>
     </section>
