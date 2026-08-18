@@ -31,6 +31,7 @@ class GlobalFooter extends HTMLElement {
               <li><a href="/#about">About</a></li>
               <li><a href="/#contact">Contact</a></li>
               <li><a href="/#dress-code">Dress Code</a></li>
+              <li><a href="/#sexual-health-is-cool">Sexual Health Is Cool</a></li>
             </ul>
             <ul>
               <li><a href="/conduct">Code of Conduct</a></li>
@@ -39,7 +40,7 @@ class GlobalFooter extends HTMLElement {
             </ul>
           </section>
 
-          <small>website made by delete <3</small>
+          <small>website made by delete &lt;3</small>
         </div>
       </footer>
     `;
